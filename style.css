@@ -1,0 +1,249 @@
+
+
+header{
+  background-image: url(./img/background.jpg);
+  background-size: 440px;
+  background-repeat: no-repeat;
+}
+
+.cabecalho{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 270px 0px 175px 0px;
+}
+
+.titulo{
+  margin-bottom: 10px;
+}
+
+.cabecalho h1{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.botoes_header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botoes_header div{
+  border: 2px solid black;
+  margin-bottom: 20px;
+  width: 100px;
+  padding: 5px;
+}
+
+/*------------------------------------*/
+
+
+.habilidades {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0px 55px 0px;
+}
+
+.habilidades p{
+  margin-bottom: 60px;
+}
+
+.habilidades h2{
+  font-size: 30px;
+}
+
+.container_skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #D1D1CF;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.skills h3 {
+  font-size: 20px;
+}
+
+.skills img{
+  width: 80px;
+}
+
+.skills p{
+  margin-bottom: 20px;
+}
+
+#primeiraimg{
+  margin-bottom: 10px;
+}
+
+#terceiraimg{
+  margin-bottom: 10px;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*----------------------------*/
+
+.portfolio { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1F1F1F;
+  color: white;
+}
+
+.portifolio_titulo {
+  font-size: 30px;
+  margin-top: 80px;
+  
+}
+
+.sub{
+  margin-bottom: 60px;
+}
+
+
+
+.grade_portfolio{
+  display: flex;
+  flex-direction: column;
+}
+.card{
+  width: 260px;
+  height: 400px;
+  background: #000;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .25s ease;
+  backface-visibility: hidden;
+  margin: 20px;
+}
+.card h2{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+.card p{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card:hover:after{
+  height: 280px;
+}
+
+.card:hover .con-text p{
+  margin-bottom: 0px;
+  opacity: 1;
+}
+
+.card:hover img{
+  transform: scale(1.25);
+}
+
+.card:after{
+  width: 100%;
+  content: '';
+  left: 0px;
+  bottom: 0px;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  z-index: 20;
+  transition: all .25s ease;
+}
+
+.card img{
+  height: 100%;
+  z-index: 10;
+  transition: all .25s ease;
+}
+
+.card .con-text{
+  z-index: 30;
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.card .con-text p{
+  font-size: .8rem;
+  opacity: 0;
+  margin-bottom: -170px;
+  transition: all .25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.card .con-text p button{
+  padding: 7px 17px;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all .25s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .75rem;
+  outline: none;
+}
+
+.card .con-text p button:hover{
+  background: #fff;
+  color: #000;
+}
+
+
+/*----------------------------*/
+
+.contato {
+  background-color: #fff;
+  text-align: center;
+  
+}
+
+.contato h2 {
+  font-size: 30px;
+  margin-top: 80px;
+}
+
+.contato p{
+  margin-bottom: 60px;
+}
+
+
+.icone img {
+  width: 80px;
+  
+}
+
+.linha {
+  height: 50px;
+  width: 5px;
+  background-color: #000;
+  
+}
+
+.icone:last-child{
+  margin-bottom: 80px;
+}
